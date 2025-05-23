@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Inter',Helvetica;
+}
+body {
+    background-color: #000000;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    min-height: 100vh;
+    padding:25px;
+}
+
+#main-img{
+    margin-right:40px;
+}
+
+#apple{
+    width:22px;
+    height:22px;
+}
+
+.button-txt{
+    position:relative;
+    top:2px;
+}
+.container{
+    width:100%;
+    max-width:340px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size:20px;
+    font-weight: 700;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.text{
+    color:#BFBFBF;
+    font-size:16px;
+    text-align:center;
+    margin-bottom:22px;
+    max-width:350px'
+}
+
+.login-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+}
+
+.login-button.google {
+    position: relative;
+}
+
+.btn-icon {
+    position: absolute;
+    left: 16px;
+    width: 20px;
+    height: 20px;
+}
+.create {
+    background-color: #9764D8;
+    border: none;
+}
+
+.login-button.create:hover {
+    background-color: white;
+    color:#9764D8;
+}
+
+/*my profile*/
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 20px;
+}
+
+.back {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    margin-right: 0px;
+    position: absolute;
+    left:20px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    position: relative;
+}
+
+.profile-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.profile-info h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.profile-info .email {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.profile-info .birthday {
+    color: #999;
+    font-size: 14px;
+}
+
+.data-main {
+    display: flex;
+    gap: 8px;
+    padding:  20px;
+    margin-bottom: 30px;
+    
+}
+
+.data {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    flex: 1;
+    padding: 5px 25px;
+    border-radius: 15px;
+    text-align: center;
+    background: #A880DA;
+    
+}
+
+.data-value {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 1px;
+    white-space:nowrap;
+}
+
+.data-unit {
+    font-size: 15px;
+    opacity: 0.9;
+    align-items: center;
+    justify-content:center;
+    white-space:nowrap;
+}
+
+.form-main{
+    padding: 0 20px;
+}
+
+.form-submain {
+    width:322px;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 20px;
+}
+
+.form-submain label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 15px;
+    background: #333;
+    border: none;
+    border-radius: 12px;
+    color: #999;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-input:focus {
+    background: #404040;
+    color:white;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 15px;
+    background: #333;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    min-height: 80px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.form-textarea:focus {
+    background: #404040;
+}
+
+.update {
+    width:142px;
+    white-space:nowrap;
+    margin: 0 5px 0 5px;
+    padding: 12px 8px;
+    background: #9764D8;
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.update:hover {
+   background-color: white;
+   color:#9764DB;
+}
+
+/*custom plan*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 15px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.content {
+    padding: 0 20px;
+    flex: 1;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.numbered-list {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: list-counter;
+    font-size:16px;
+    font-weight: 600;
+}
+
+
+.bottom-button {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background: #9764D8;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(139, 92, 246, 0.3);
+    transition: all 0.3s ease;
+    text-decoration:none;
+}
+
+.bottom-button:hover {
+    background-color: white;
+    color:#9764D8;
+}
+
+/* AI-trainer*/
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.content {
+    padding: 0 20px;
+    flex: 1;
+}
+
+.select-sesh-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top:50px;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sesh-button {
+    background: #9764D8;
+    color: white;
+    border: none;
+    padding: 18px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sesh-button:hover {
+    background-color: white;
+    color:#9764D8;
+}
+
+/*camera feed*/
+.body{
+    padding:0;
+    margin:0;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    gap:120px;
+    margin-top:0;
+}
+.close{
+    color:white;
+    text-decoration: none;
+    font-weight:700;
+    font-size:20px;
+}
+.end-session{
+    text-decoration: none;
+    color:white;
+    background-color: red;
+    padding:15px;
+    border-radius:15px;
+}
+.end-session:hover{
+    background-color: white;
+    color:Red;
+}
+.camera-feed {
+    width:280px;
+    height: 550px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
