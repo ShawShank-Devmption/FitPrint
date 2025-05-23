@@ -1,0 +1,57 @@
+<!--VERIFICATION PAGE-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Number Verification</title>
+    <link rel="stylesheet" href="veripg-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body style="background-color: black;">
+    <!--Header-->
+     <header>
+        <div class="header-container">
+            <div class="back-container" id="back-container">
+                <a href="#" class="create-account"><i class="fa-solid fa-arrow-left" style="color: white;"></i>&nbsp&nbspCreate Account</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!--title and subtitle-->
+    <div class="container">
+        <h1>Phone Number Verification</h1>
+        <p class="subtitle">Enter your phone number to proceed with login. A verification code will be sent.</p>
+
+        <!--form-->
+        <form>
+            <div class="form">
+                <label for="name">Name</label>
+                <input type="text" class="inside-box-text" name" placeholder="Enter Your Full Name">
+            </div>
+
+            <div class="form">
+                <label for="phone">Phone Number</label>
+                <div class="phone-input">
+                    <span class="country-code">+91</span>
+                    <input type="tel" class="inside-box-text" id="phone" placeholder="Enter Your Phone Number">
+                </div>
+            </div>
+
+            <p class="note">Please enter active phone number</p>
+            
+            <!--continue button-->
+            <button type="submit" class="continue-btn">Continue</button>
+
+            <!--t&c-->
+            <p class="terms">By clicking, I accept the <a href="#">Terms & Conditions</a> and <a href="#">Privacy
+                    Policy</a></p>
+        </form>
+    </div>
+</body>
+
+</html>
