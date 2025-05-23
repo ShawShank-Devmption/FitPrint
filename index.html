@@ -1,0 +1,105 @@
+<!--HERO PAGE-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITPRINT - Blueprint for Your Fitness</title>
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <div class="header-container">
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="logo"><img src="flogo.svg" class="logo-img">FITPRINT</div>
+            <div class="login-btn">LOGIN</div>
+        </div>
+    </header>
+
+    <!--Nav Bar-->
+    <nav class="side-nav" id="sideNav">
+        <div class="nav-header">
+            <div class="close-btn" id="closeBtn">
+                <i class="fas fa-xmark"></i>
+            </div>
+        </div>
+        <div class="nav-content">
+            <h2>Main Menu</h2>
+            <ul>
+                <li><a href="#"><i class="fas fa-house"></i>&nbsp&nbspMy profile</a></li>
+                <li><a href="#"><i class="fas fa-face-smile"></i>&nbsp&nbspDash Board</a></li>
+                <li><a href="#"><i class="fa-solid fa-dumbbell"></i>&nbspIdentify equipment</a></li>
+                <li><a href="#"><i class="fas fa-heart"></i>&nbsp&nbspCustom-Plan</a></li>
+                <li><a href="#"><i class="fas fa-gear"></i>&nbsp&nbspSettings</a></li>
+            </ul>
+
+            <h2>Preferences</h2>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-sliders"></i>&nbsp&nbspApp Preferences</a></li>
+                <li><a href="#"><i class="fa-solid fa-calendar-days"></i>&nbsp&nbspSubscription & Billing</a></li>
+                <li><a href="#"><i class="fa-solid fa-file-export"></i>&nbsp&nbspExport your Data</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-info"></i>&nbsp&nbspHelp</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="overlay" id="overlay"></div>
+
+        <div class="hero">
+            <!-- Gradient Background -->
+            <div class="gradient-container">
+
+                <!-- Image -->
+                <div class="img-overlay">
+                    <img src="person.svg" class="img-container" style="max-width: 100%; width: 100vw; height: auto;">
+                </div>
+
+                <!-- Text Content -->
+                <div class="text-overlay">
+                    <h1>BLUEPRINT<br>FOR YOUR<br>FITNESS</h1>
+
+
+                    <!-- Button-->
+                    <div class="button-container">
+                        <button class="start-btn">START NOW <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.getElementById('hamburger');
+        const sideNav = document.getElementById('sideNav');
+        const closeBtn = document.getElementById('closeBtn');
+        const overlay = document.getElementById('overlay');
+
+        hamburger.addEventListener('click', () => {
+            sideNav.classList.add('active');
+            overlay.classList.add('active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            sideNav.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+
+        overlay.addEventListener('click', () => {
+            sideNav.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    </script>
+</body>
+
+</html>
